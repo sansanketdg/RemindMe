@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#88ffff00"
+    tools:context=".MainActivity" >
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/plusReminder"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="5dp"
+        android:dividerHeight="2dp"
+        android:drawSelectorOnTop="@+id/plusReminder" >
+    </ListView>
+
+    <Button
+        android:id="@+id/plusReminder"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/date_time_selector"
+        android:text="@string/newText"
+        android:textColor="#1a202c"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/appNameShow"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/plusReminder"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textColor="#2f6699"
+        android:textSize="50sp"
+        android:text="@string/app_name"
+        android:visibility="gone" />
+
+</RelativeLayout>
